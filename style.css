@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: thistle;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+h1 {
+  margin-top: 5vmin;
+}
+
+/* Container centers the game */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vmin;
+}
+
+/* Game grid */
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: min(80vmin, 90vw);
+  aspect-ratio: 1 / 1;
+}
+
+/* Each box */
+.box {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  font-size: 8vmin;
+  border-radius: 1rem;
+  border: none;
+  color: #623366;
+  box-shadow: 0 0 1rem purple;
+  background-color: #f5f5f5;
+}
+
+/* Reset and new game buttons */
+#reset-btn,
+#new-btn {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: black;
+  color: beige;
+  border-radius: 1rem;
+  border: none;
+  margin-top: 2rem;
+}
+
+/* Message container */
+.msg-container {
+  height: auto;
+}
+
+#msg {
+  color: whitesmoke;
+  font-size: 5vmin;
+}
+
+.hide {
+  display: none;
+}
